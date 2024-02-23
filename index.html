@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend 1 | JS Primeros pasos | Juan-MV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="row-banner">
+          <img
+            src="resources/bing_wallpaper_LakeTahoeRock_uhd.jpg"
+            alt="Bing Wallpaper"
+          />
+        </div>
+        <h5>Calcular índice de masa corporal (IMC)</h5>
+        <div class="row">
+          <input type="text" placeholder="Introduce tu nombre:" id="nombre" />
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            id="edad"
+            placeholder="Introduce tu edad:"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            placeholder="Introduce tu peso en kg:"
+            id="peso"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '');"
+            step="any"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            placeholder="Introduce tu estatura en mts:"
+            id="altura"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '');"
+            step="any"
+          />
+        </div>
+        <h5 id="resultado">Resultado:</h5>
+        <div class="row">
+          <button type="button" onclick="calcular()">Calcular</button>
+        </div>
+        <hr />
+        <div>
+          <h5>
+            Capturar calificaciones de varios alumnos y al final obtener un
+            promedio general e indicar a cada alumno si la calificación es
+            aprobatoria o no.
+          </h5>
+        </div>
+        <div id="resultadosContainer"></div>
+        <div id="promedioGeneral"></div>
+        <div class="row">
+          <button type="button" onclick="calificarAlumnos()">
+            Capturar...
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

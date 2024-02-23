@@ -1,0 +1,96 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    background-color: lightgray;
+    margin: 7px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+    text-align: center;
+}
+
+.row-banner {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.row-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 7px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.row input {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 23px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    font-size: small;
+    outline: none;
+}
+
+.row button {
+    width: 33%;
+    height: 33px;
+    margin: 33px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.row button:hover {
+    background-color: rgb(81, 124, 254);
+}
+
+.row button:active {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    border: 1px dotted lightgray;
+    margin: 15px;
+}
+
+p {
+    font-size: smaller;
+}
+
+#resultadosContainer {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
